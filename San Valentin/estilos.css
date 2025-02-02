@@ -1,0 +1,95 @@
+body {
+    background: url('https://a.storyblok.com/f/112937/568x379/b8d91ebdb6/image-2019-02-12.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+h1 {
+    color: #ff69b4;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #f8f8f8;
+}
+
+.image-container img {
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
+}
+
+.hearts {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.heart {
+    width: 50px;
+    height: 50px;
+    background-color: #ff1493;
+    position: relative;
+    transform: rotate(-45deg);
+    animation: float 2s infinite ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #ff1493;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+    top: -25px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 25px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(-45deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(-45deg);
+    }
+}
+
+.footer {
+    background: rgba(255, 182, 193, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    color: #800000;
+    font-weight: bold;
+}
